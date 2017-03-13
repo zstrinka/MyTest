@@ -1,4 +1,4 @@
-Question 1:
+# Question 1:
 
 I have provided mainFile.py as well as Question1.py to answer this question, as well as a sample file Question1Text.txt. The resulting code can read in a text file and outputs the total number of words, number of unique words, and number of sentences in the file. In addition, there is a function to print out to the console the unique words in descending order of frequency.
 
@@ -6,7 +6,7 @@ For this question, I learned there are already many tools available to handle wo
 
 If I were to do this in a work-setting, I would use the resources mentioned in this StackOverflow question: http://stackoverflow.com/questions/4576077/python-split-text-on-sentences
 
-Question 2:
+# Question 2:
 
 I did some initial work to answer this question, but did not test the code, and therefore I expect there are some issues. 
 
@@ -23,20 +23,20 @@ where
         SELECT B.salesperson_id COUNT(B.salesperson_id) as cnt FROM Orders B WHERE cnt>1
 )
 
-Question 3:
+# Question 3:
 
-# What questions would you ask me about my goals and methodology?
+What questions would you ask me about my goals and methodology?
 I would want to know if the providers always saw the same version of the form. I would also want to know how many providers these results represented. If the providers saw different forms each time they visited and there were a lot of repeat visitors, I would want to know what the timeseries for each providor (visit, chose to submit a quote) looks like.
 
-# What's your interpretation of these results?
+What's your interpretation of these results?
 Assuming there were 3000 distinct providers for the purpose of my analysis:
 
 I would use a power analysis calculation (like the one provided here: http://clincalc.com/stats/samplesize.aspx) to compare the largest (variation 3) and smallest (variation 2) quote rates. Doing that analysis via the calculator, the required sample size for each subgroup is given as 275 participants for alpha = 5% and power = .8. With more time, I would do all the comparisons. 
 
-# What conclusions would you draw?
+What conclusions would you draw?
 I would be hesitant to make any long term predictions since (by my assumption) we can assume most providers knew how to fill out the baseline form, and so I would want to test if future visits to a revised form continued to have results similar to those found in the first experiment.
 
 If these were all completely new providers (i.e., they had never served on the website before), based on the above analysis I would at least conclude that variation 3 is better than variation 2.
 
-# Do you have any thoughts on the experimental design?
+Do you have any thoughts on the experimental design?
 Being able to look at the timeseries data for a single provider visiting the site multiple times would hopefully provide critical information about how the users learn the different interfaces. 
